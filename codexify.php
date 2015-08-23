@@ -24,7 +24,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 
 if ( ! class_exists( 'WPORG_Codexify' ) ) {
 class WPORG_Codexify {
-	const BASE_URI = 'http://codex.wordpress.org/';
+	const BASE_URI = 'https://codex.wordpress.org/';
 
 	public function __construct() {
 		add_filter( 'content_save_pre', array( $this, 'convert_wiki_links' ) );
