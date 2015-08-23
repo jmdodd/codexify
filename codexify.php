@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name: Codexify
+ * Plugin Name: WordPress Support Forums Codexify
  * Description: Convert wiki markup links into HTML WordPress Codex links.
  * Version: 1.0
  * Author: Jennifer M. Dodd
@@ -22,8 +22,8 @@
 
 if ( ! defined( 'ABSPATH' ) ) exit;
 
-if ( ! class_exists( 'Codexify' ) ) {
-class Codexify {
+if ( ! class_exists( 'WPORG_Codexify' ) ) {
+class WPORG_Codexify {
 	const BASE_URI = 'http://codex.wordpress.org/';
 
 	public function __construct() {
@@ -62,4 +62,4 @@ class Codexify {
 	}
 } }
 
-new Codexify;
+new WPORG_Codexify;
